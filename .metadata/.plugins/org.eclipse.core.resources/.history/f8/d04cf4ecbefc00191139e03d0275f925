@@ -1,0 +1,33 @@
+package com.oopadvanced.tries;
+import java.util.*;
+
+public class TriesTest {
+    public static void main(String[] args) {
+        Tries trie = new Tries();
+        trie.insertWord("car");
+        trie.insertWord("dard");
+        trie.insertWord("chip");
+        trie.insertWord("trie");
+        trie.insertWord("try");
+        trie.insertWord("hey");
+        trie.insertWord("hi");
+        trie.insertWord("jello");
+        trie.insertWord("cello");
+        trie.insertWord("bello");
+        trie.insertWord("zard");
+        trie.insertWord("yard");
+        trie.insertWord("vard");
+        trie.insertWord("hard");
+        trie.insertWord("eard");
+        trie.insertWord("uard");
+        trie.insertWord("iard");
+        trie.insertWord("pard");
+        trie.insertWord("qard");
+        trie.insertWord("ward");
+        Node a = new Node();
+        
+        
+        //System.out.println(trie.word("hello"));
+        trie.printAll();
+    }
+}

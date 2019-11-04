@@ -1,0 +1,30 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link href="style.css" rel="stylesheet"/>
+<title>Insert title here</title>
+</head>
+<body>
+ 		<% String req = request.getParameter("height"); %>
+ 		<h1><%= (int)req %></h1>
+	 	<table>
+	 		<% for(int red = 0; red < 3; red++){ %>
+	 		<tr>
+			<% for(int black = 0; black < 7; black++){ %>
+	 			<% if(black%2 == 0){ %>
+	 			<td><div class="black"></div></td>
+	 			<% } %>
+	 			<% if(black%2 != 0){ %>
+	 			<td><div class="red"></div></td>
+	 			<% } %>
+			<%} %>
+	 		</tr>
+	 		<% } %>
+	 	
+	 	</table>
+	
+</body>
+</html>

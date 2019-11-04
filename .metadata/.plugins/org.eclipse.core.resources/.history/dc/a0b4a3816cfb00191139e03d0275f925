@@ -1,0 +1,5 @@
+package com.oopadvanced.phone;
+
+public interface Ringable {
+
+}

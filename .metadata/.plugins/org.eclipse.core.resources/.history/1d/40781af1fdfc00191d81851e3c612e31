@@ -1,0 +1,24 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link href="style.css" rel="stylesheet"/>
+<title>Insert title here</title>
+</head>
+<body>
+
+	 	<table>
+	 		<% for(int red = 0; red < 10; red++){ %>
+	 		<tr>
+			<% for(int black = 0; black < 5/2; black++){ %>
+	 			<td><div class="black"></div></td>
+	 			<td><div class="red"></div></td>
+			<%} %>
+	 		</tr>
+	 		<%} %>
+	 	</table>
+	
+</body>
+</html>
